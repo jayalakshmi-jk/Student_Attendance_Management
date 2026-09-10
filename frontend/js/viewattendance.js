@@ -17,7 +17,7 @@ async function get_attendance() {
 
     try{
 
-        let response = await fetch('http://localhost:3000/student/attendance')
+        let response = await fetch('https://student-attendance-management-qo5t.onrender.com/student/attendance')
         let data = await response.json()
         console.log(data);
     tbody.innerHTML = data.map((i) => {
@@ -65,7 +65,7 @@ async function edit_data(e) {
     e.preventDefault();
 
     try {
-        let response = await fetch(`http://localhost:3000/attendance/${editing_attendance_id}`, {
+        let response = await fetch(`https://student-attendance-management-qo5t.onrender.com/attendance/${editing_attendance_id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ status: edit_status.value })
@@ -89,7 +89,7 @@ async function delete_attendance(id) {
     }
 
     try {
-        let response = await fetch(`http://localhost:3000/attendance/${id}`, {
+        let response = await fetch(`https://student-attendance-management-qo5t.onrender.com/attendance/${id}`, {
             method: 'DELETE'
         });
 
@@ -118,7 +118,7 @@ async function search_data() {
     }
 
     try {
-        let response = await fetch(`http://localhost:3000/student/attendance/search/${encodeURIComponent(searchValue)}`)
+        let response = await fetch(`https://student-attendance-management-qo5t.onrender.com/student/attendance/search/${encodeURIComponent(searchValue)}`)
         let data = await response.json()
         
         if (!response.ok) {

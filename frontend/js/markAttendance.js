@@ -8,7 +8,7 @@ savebtn.addEventListener('click',saveData)
 async function get_student() {
   try {
     // 1. get student
-    let studentResponse = await fetch("http://localhost:3000/student");
+    let studentResponse = await fetch("https://student-attendance-management-qo5t.onrender.com/student");
 
     let students = await studentResponse.json();
 
@@ -63,7 +63,7 @@ async function saveData() {
 
         console.log(student_id, status);
 
-        await fetch("http://localhost:3000/attendance/update", {
+        await fetch("https://student-attendance-management-qo5t.onrender.com/attendance/update", {
 
             method: "POST",
 

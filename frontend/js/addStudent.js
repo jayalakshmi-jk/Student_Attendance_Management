@@ -20,7 +20,7 @@ async function add_student(e) {
       reg_no: reg_no,
       class_group: dropdown,
     };
-    let response = await fetch("http://localhost:3000/student/post", {
+    let response = await fetch("https://student-attendance-management-qo5t.onrender.com/student/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

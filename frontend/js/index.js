@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', loadDashboardStats);
 
 async function loadDashboardStats() {
     try {
-        const response = await fetch('http://localhost:3000/dashboard/stats');
+        const response = await fetch('https://student-attendance-management-qo5t.onrender.com/dashboard/stats');
         const stats = await response.json();
 
         if (response.ok) {
