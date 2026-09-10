@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/frontend/css/index.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            Student Management System
+        </div>
+
+        <a href="/frontend/html/index.html" class="active">Dashboard</a>
+        <a href="/frontend/html/addstudent.html">Add Student </a>
+        <a href="/frontend/html/markAttendance.html">Mark Attendance </a>
+        <a href="/frontend/html/viewattendance.html">View Attendance </a>
+        <a href="/frontend/html/login.html">Log Out </a>
+
+    </nav>
+
+    <div class="dashboard-container">
+        <h1>Dashboard</h1>
+        <div class="stats-grid">
+            <div class="stat-card total">
+                <div class="stat-value" id="total-students">0</div>
+                <div class="stat-label">Total Students</div>
+            </div>
+
+            <div class="stat-card present">
+                <div class="stat-value" id="present-count">0</div>
+                <div class="stat-label">Present</div>
+            </div>
+
+            <div class="stat-card absent">
+                <div class="stat-value" id="absent-count">0</div>
+                <div class="stat-label">Absent</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/frontend/js/index.js"></script>
+</body>
+</html>

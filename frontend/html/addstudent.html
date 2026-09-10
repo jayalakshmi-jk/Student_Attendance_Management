@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='/frontend/css/addstudent.css'>
+</head>
+
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            Student Management System
+        </div>
+
+        <a href="/frontend/html/index.html" class="active">Dashboard</a>
+        <a href="/frontend/html/addstudent.html">Add Student </a>
+        <a href="/frontend/html/markAttendance.html">Mark Attendance </a>
+        <a href="/frontend/html/viewattendance.html">View Attendance </a>
+        <a href="/frontend/html/login.html">Log Out </a>
+    </nav>
+    <h1>Add the Student</h1>
+    <form id="add-form">
+        <label for="reg_no">Register No.</label><br>
+        <input type="number" id="reg_no" required><br><br>
+
+        <label for="roll_no">Roll No.</label><br>
+        <input type="number" id="roll_no" required min="1" max="100"><br><br>
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="class">Choose the class:</label><br>
+
+        <select name="class" id="class">
+            <option value="" selected>-- Please choose an class --</option>
+            <option value="I A">I A</option>
+            <option value="I B">I B</option>
+            <option value="I C">I C</option>
+            <option value="II A">II A</option>
+            <option value="II B">II B</option>
+            <option value="II C">II C</option>
+            <option value="III A">III A</option>
+            <option value="III B">III B</option>
+            <option value="III C">III C</option>
+            <option value="IV A">IV A</option>
+            <option value="IV B">IV B</option>
+            <option value="IV C">IV C</option>
+            <option value="V A">V A</option>
+            <option value="V B">V B</option>
+            <option value="V C">V C</option>
+            <option value="VI A">VI A</option>
+            <option value="VI B">VI B</option>
+            <option value="VI C">VI C</option>
+            <option value="VII A">VII A</option>
+            <option value="VII B">VII B</option>
+            <option value="VII C">VII C</option>
+            <option value="VIII A">VIII A</option>
+            <option value="VIII B">VIII B</option>
+            <option value="VIII C">VIII C</option>
+            <option value="IX A">IX A</option>
+            <option value="IX B">IX B</option>
+            <option value="IX C">IX C</option>
+            <option value="X A">X A</option>
+            <option value="X B">X B</option>
+            <option value="X C">X C</option>
+
+        </select><br><br>
+
+        <button type="submit">Add Student</button>
+    </form>
+    <script src="/frontend/js/addStudent.js"></script>
+</body>
+
+</html>

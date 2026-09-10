@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #3498db;
+    --dark-bg: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-bg) 100%);
+    min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+   
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+
+}
+.topic{
+    color: white;
+    padding: 15px;
+}
+
+#admin-login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin-left: 33%;
+}
+
+#admin-login-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: var(--dark-bg);
+    font-weight: 500;
+}
+
+#admin-login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+#admin-login-form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+#admin-login-form button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#admin-login-form button:hover {
+    background-color: #2980b9;
+}
