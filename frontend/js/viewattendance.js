@@ -66,7 +66,7 @@ async function edit_data(e) {
 
     try {
         let response = await fetch(`https://student-attendance-management-qo5t.onrender.com/attendance/${editing_attendance_id}`, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ status: edit_status.value })
         });
