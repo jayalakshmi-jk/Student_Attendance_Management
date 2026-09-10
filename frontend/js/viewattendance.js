@@ -128,10 +128,10 @@ async function search_data() {
         tbody.innerHTML = data.map((i) => {
             return `
                 <tr>
-                    <td>${i.reg_no}</td>
-                    <td>${i.Roll_No}</td>
-                    <td>${i.name}</td>
-                    <td>${i.class_group}</td>
+                    <td>${i.student.reg_no}</td>
+                    <td>${i.student.roll_no}</td>
+                    <td>${i.student.name}</td>
+                    <td>${i.student.class_group}</td>
                     <td>${i.status}</td>
                     <td>
                         <button type="button" onclick='edit_attendance(${i.id},${JSON.stringify(i.status)})'>Edit</button>
