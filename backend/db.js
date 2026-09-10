@@ -1,18 +1,15 @@
-let mysql = require('mysql2')
+require('dotenv').config();
+const { createClient } = require('@supabase/supabase-js');
 
-let con = mysql.createConnection({
-    host:'localhost',
-    user:'dckap',
-    password:'Welcome@123',
-    database:'Attendance_Management_System'
-})
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
 
+if (!supabaseUrl || !supabaseKey) {
+  throw new Error('Missing SUPABASE_URL or SUPABASE_KEY in .env');
+}
 
-con.connect((err,res)=>{
-    if(err){
-        throw err
-    }
-    console.log('DB Connected!!!');
-})
+const supabase = createClient(supabaseUrl, supabaseKey);
 
-module.exports = con
+console.log('Supabase client ready!!!');
+
+module.exports = supabase;
