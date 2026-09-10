@@ -32,7 +32,7 @@ async function admin_login(e) {
     localStorage.setItem("admin", JSON.stringify(login_data));
 
     admin.reset();
-    window.location.href = "/frontend/html/index.html";
+    window.location.href = "../html/index.html";
   } catch (error) {
     console.log(error);
   }
