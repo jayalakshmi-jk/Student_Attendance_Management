@@ -70,7 +70,7 @@ router.post("/attendance/update", async (req, res) => {
   });
 });
 
-router.put("/attendance/:id", async (req, res) => {
+router.patch("/attendance/:id", async (req, res) => {
   const { status } = req.body;
   const { id } = req.params;
 
