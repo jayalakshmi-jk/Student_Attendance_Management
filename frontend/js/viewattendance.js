@@ -24,14 +24,14 @@ async function get_attendance() {
         return `
                 <tr>
 
-                    <td>${i.reg_no}</td>
+                    <td>${i.student.reg_no}</td>
 
-                    <td>${i.Roll_No}</td>
+                    <td>${i.student.roll_no}</td>
 
                     <td>${i.student.name}</td>
 
                     <td>
-                        ${i.class_group}
+                        ${i.student.class_group}
                     </td>
 
                     <td>
