@@ -23,7 +23,7 @@ async function get_student() {
 
                     <td>${student.reg_no}</td>
 
-                    <td>${student.Roll_No}</td>
+                    <td>${student.roll_No}</td>
 
                     <td>${student.name}</td>
 

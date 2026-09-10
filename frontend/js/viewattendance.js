@@ -28,7 +28,7 @@ async function get_attendance() {
 
                     <td>${i.Roll_No}</td>
 
-                    <td>${i.name}</td>
+                    <td>${i.student.name}</td>
 
                     <td>
                         ${i.class_group}
